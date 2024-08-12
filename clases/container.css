@@ -1,0 +1,15 @@
+.container{
+display: flex; 
+border: 1px solid black;
+width: 900%;
+margin: auto;
+/*flex-direction: colum;
+flex-wrap: nowrap;*/
+flex-flow: row nowrap;
+justify-content: space-around;
+align-items: flex-end;
+}
+.item{
+border: solid rgb (2489, 248, 248);
+background-color: Orange;
+}

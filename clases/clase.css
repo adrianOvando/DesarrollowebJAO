@@ -1,0 +1,17 @@
+.container{
+    width: 900px;
+    border: 1px solid black;
+    margin: auto;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    background-color: skyblue;
+}
+
+.tritle1{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
