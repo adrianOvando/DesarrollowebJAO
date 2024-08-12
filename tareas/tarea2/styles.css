@@ -4,7 +4,6 @@ body {
     color: #333333; /* Color del texto */
     margin: 0; /* Elimina el margen por defecto del navegador */
     padding: 0; /* Elimina el relleno por defecto del navegador */
-    display: flex; /* Flexbox para centrar el contenido */
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
     height: 100vh; /* Altura de la ventana completa */
