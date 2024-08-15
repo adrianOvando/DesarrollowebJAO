@@ -1,0 +1,33 @@
+.container{
+    width: 900px;
+    margin: auto;
+}
+
+.cabecera{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 900px;
+    background-color: black;
+    border: none;
+}
+
+.cabe{
+    color: white;
+    justify-content: space-around;
+}
+
+.container2{
+    width: 900px;
+    background-color: rgb(81, 138, 79);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cab{
+    color: white;
+}
+
+

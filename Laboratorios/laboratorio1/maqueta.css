@@ -1,0 +1,55 @@
+.container{
+    width: 900px;
+    border: none;
+    margin: auto;
+}
+
+.title{
+    color: white;
+}
+
+header{
+    padding: 5% 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    width: 100%;
+    background-color: pink;
+}
+
+.container2{
+    display: flex;
+    width: 900px;
+    border: none;
+    margin: auto;
+    background-color: rgb(97, 181, 217);
+    justify-content: flex-start;
+}
+
+.menu{
+    color: rgb(250, 250, 250);
+    margin: 10px;
+}
+ .menu1{
+    color: rgb(250, 250, 250);
+    margin: 10px;
+ }
+
+ .caja{
+    display: flex;
+    width: 900px;
+    border: none;
+    margin: 0;
+ }
+ 
+ .izquierda{
+    border: none;
+    margin: auto;
+    background-color: rgb(176, 177, 177);
+    padding: 20% 8.1%;
+ }
+
+ .chico{
+    padding: 40%;
+    background-color: rgb(65, 64, 63);
+ }
