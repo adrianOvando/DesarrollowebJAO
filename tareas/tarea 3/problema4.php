@@ -2,7 +2,6 @@
 <html lang="es">
 <head>
     <title>Tabla de Ajedrez</title>
-    <dv>4.- generar una tabla de ajedrez utilizando php donde los cuadros es de color negro</dv>
     <style>
         table {
             border-collapse: collapse;
