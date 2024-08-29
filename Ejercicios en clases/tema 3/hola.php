@@ -20,9 +20,9 @@
     <h2> Imprimir numeros del 1 al 10</h2>
     <ul>
         <?php  
-            for ($i=0;$i<10;$i++){
+            for ($i=0;$i<10;$i++)
                 echo '<li>"'.$i.'"</li>'
-            }
+            
         ?>
     </ul>
 </body>
