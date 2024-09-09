@@ -1,20 +1,19 @@
 <?php
 $a=$_COOKIE['a'];
-$a=$_COOKIE['b'];
-$r=$_GET['operacion'];
-$total=0;
-switch($r){
-    case "suma";
-    $total=$a+$b;
-    echo "suma $total <br>";
-    break;
-    case "restar";
-    $total=$a-$b;
-    echo "resta $total <br>";
-    break;
-    case "multiplicacion";
-    $total=$a*$b;
-    echo "multiplicacion $total <br>";
-    break;
+$b=$_COOKIE['b'];
+
+$op=$_GET['operacion'];
+
+switch($op){
+    case 'suma':
+        $resultado = $a + $b;
+        break;
+    case 'restar':
+        $resultado = $a - $b;
+        break;
+    case 'multiplicar':
+        $resultado = $a * $b;
+        break;
 }
+echo $resultado;
 ?>
