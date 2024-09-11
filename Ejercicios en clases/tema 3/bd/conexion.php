@@ -1,5 +1,5 @@
 <?php 
-$con= new mysqli("localhost","root","","bd_eleciones");
+$con = new mysqli('localhost:3307', 'root', '', 'bd_eleciones');
 if($con->connect_error)
 {
     die("Error: " . $con->connect_error);
