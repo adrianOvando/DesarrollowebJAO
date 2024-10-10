@@ -1,26 +1,31 @@
 <?php include 'conexion.php';
-$sql="SELECT nombres,apellidos,carnet,sexo,fechadenacimiento,operaciones FROM padrom";
+session_start();
+include ("acceso.php");
+$sql="SELECT id,email,nivel FROM usuarios";
 $resultado=$con->query($sql);
 ?>
-
 <table>
     <tr>
-        <th>nombres</th>
-        <th>apellidos</th>
-        <th>carnet</th>
-        <th>sexo</th>
-        <th>fechadenacimiento</th>
-        <th>opereciones</th>
+        <th>email</th>
+        <th>nivel</th>
     </tr>
-    <?php while($fila=$resultado->fetch_assoc())
+    <?php while($fila=$resultado->fetch_assoc()) 
     {?>
     <tr>
-        <td><?php echo $fila['nombres'];?></td>
-        <td><?php echo $fila['apellidos'];?></td>
-        <td><?php echo $fila['sexo'];?></td>
-        <td><?php echo $fila['fechadenacimiento'];?></td>
-        <td><a href="form_update.php?id="></td>
+        <td><?php echo $fila['email'];?></td>
+        <td><?php
+        if($fila['nivel']==1){
+            echo "administrador"; 
+        }
+        else{
+            echo "usuario";
+        }
+        ?></td>
+        <td><a href="form_update_usuarios.php?id=<?php echo $fila['id'];?>">Editar</a> 
+        
+        <a href="delete_usuarios.php?id=<?php echo $fila['id'];?>">Eliminar</a>       
     </tr>
     <?php }?>
 </table>
-<href></href>
+
+<a href="form_create_usuario.html">Registrar nuevo</a>

@@ -1,0 +1,126 @@
+.titulo{
+    display: flex;
+    margin: auto;
+    width: 900px;
+    height: 150px;
+    background-color: #FABF8F;
+    border: 2px solid black;
+}
+
+.imag{
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 40px;
+}
+
+.title{
+    text-align: center;
+}
+
+.aba{
+    display: flex;
+    flex-wrap: wrap;
+    margin:auto;
+    width: 900px;
+    background-color: white;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+.iz{
+    width: 900px;
+    height: 50px;
+    background-color: rgb(99, 94, 94);
+    border-right: 2px solid black;
+}
+
+.dere{
+    background-color: #D9D9D9;
+    width: 900px;
+}
+
+.item{
+
+    border: 3px solid rgb(226, 93, 16);
+    padding: 10px;
+    background-color: yellow;
+    margin-right: 5px;
+}
+
+.row{
+    display:flex;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.cora{
+    width: 200px;
+    height: 120px;
+    margin-right: 50px;
+}
+.brow{
+    width: 400px;
+    height: 200px;
+}
+.maba{
+    display: flex;
+    margin:auto;
+    width: 900px;
+    border: 2px solid black;
+    border-width: 0ch;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    height: 220px;
+}
+
+.semestre{
+    margin-top: 10px;
+    color: rgb(214, 117, 38);
+    margin-right: 410px;
+}
+
+.pregunta{
+    width: 120px;
+    background-color: white;
+    border-right: 2px solid black;
+}
+
+.pre{
+    border: 3px solid rgb(226, 93, 16);
+    padding: 10px;
+    background-color: yellow;
+    margin-top: 20px;
+}
+
+.facu{
+    display: flex;
+    flex-wrap: wrap;
+    margin:auto;
+    width: 900px;
+    height: 40px;
+    border-collapse: collapse;
+    border:  1px solid black;
+}
+
+.sis{
+    width: 450px;
+    background-color: #D9D9D9;
+    border-right: 1px solid black;
+    text-align: center;
+}
+.cien{
+    width: 449px;
+    background-color: #92D050;
+    text-align: center;
+}
+
+.nom{
+    margin:auto;
+    width: 900px;
+    height: 20px;
+    border: 2px solid black;
+    border-top: white;
+    text-align: end;
+}
