@@ -1,0 +1,54 @@
+.titulo{
+    display: flex;
+    margin: auto;
+    width: 900px;
+    height: 200px;
+    background-color: rgb(53, 174, 178);
+    border: 2px solid black;
+}
+
+.imag{
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 40px;
+}
+
+.title{
+    text-align: center;
+}
+
+.aba{
+    display: flex;
+    margin:auto;
+    height: 300px;
+    width: 900px;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.iz{
+    width: 120px;
+    text-align: center;
+    background-color: rgb(99, 94, 94);
+    border-right: 2px solid black;
+}
+
+.dere{
+    background-color: rgb(173, 187, 200);
+    width: 780px;
+}
+
+.item{
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: white;
+}
+
+.colum{
+    margin-top: 60px;
+    width: 100px;
+    margin-left: 10px;
+}
