@@ -1,0 +1,91 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" 
+        content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title> 
+    <style> 
+        html, body { 
+            width: 100%; 
+            height: 100%; 
+            margin: 0; 
+            padding: 0; 
+            background-color: papayawhip;
+        } 
+        body{ 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+        } 
+        .conteiner { 
+            padding: 20px; 
+            border-radius: 10px;
+        } 
+        select, button, input{ 
+            background-color: yellow; 
+            margin: 6px; 
+            padding: 8px; 
+            border-radius: 5px;
+        } 
+        
+        .resultado{ 
+            padding: 5px; 
+            text-align: center; 
+            height: 60px; 
+            margin-top: 10px;
+            border-radius: 5px;
+        } 
+        label {
+            margin-top: 10px;
+        }
+    </style> 
+</head> 
+ 
+<body> 
+    <div id="conteiner"> 
+        <label for="operaciones">operacion</label> 
+        <select name="operaciones" id="operaciones"> 
+        <option value="sumar" class="operacion">sumar</option> 
+        <option value="restar" class="operacion">restar</option> 
+        <option value="multiplicar" class="operacion">multiplicar</option> 
+        <option value="dividir" class="operacion">dividir</option> 
+        </select> <br> 
+        <label for="A">A</label> 
+        <input type="number" name="A" id="A"> <br> 
+        <label for="B">B</label> 
+        <input type="number" name="B" id="B"> <br> 
+        <button type="button" onclick="resolver()">calcular</button> 
+        <div id="resultado"> 
+        <p id="res"></p> 
+        </div> 
+    </div> 
+    <script> 
+        function resolver() { 
+            operacion = document.getElementById('operaciones').value; 
+            resultado = 0; 
+            A = parseInt(document.getElementById('A').value); 
+            B = parseInt(document.getElementById('B').value); 
+            switch(operacion){ 
+                case 'sumar': 
+                    resultado = A + B; 
+                    document.getElementById('res').innerHTML = (`el resultado es ${resultado}`); 
+                break; 
+                case 'restar': 
+                    resultado = A - B; 
+                    document.getElementById('res').innerHTML = (`el resultado es ${resultado}`); 
+                break; 
+                case 'multiplicar': 
+                    resultado = A * B; 
+                    document.getElementById('res').innerHTML = (`el resultado es ${resultado}`); 
+                break; 
+                case 'dividir': 
+                    resultado = A / B; 
+                    document.getElementById('res').innerHTML = (`el resultado es ${resultado}`); 
+                break; 
+            } 
+        } 
+    </script> 
+</body> 
+ 
+</html>
