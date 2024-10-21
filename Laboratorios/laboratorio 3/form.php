@@ -1,16 +1,3 @@
-<?php
-
-include("connect.php");
-
-$sqlCheck = "SELECT COUNT(*) AS count FROM carreras";
-$resultCheck = $con->query($sqlCheck);
-$rowCheck = $resultCheck->fetch_assoc();
-
-if ($rowCheck['count'] == 0) {
-    $sqlInsert = "INSERT INTO carreras (carrera) VALUES ('Ingeniería de Sistemas'), ('Ingeniería Industrial'), ('Arquitectura'), ('Derecho')";
-}
-
-?>
 
 <!DOCTYPE html>
 <html lang="en">

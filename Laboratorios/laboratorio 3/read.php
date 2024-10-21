@@ -1,6 +1,6 @@
 <?php
 
-include "connect.php";
+include ("connect.php");
 
 $sql = "SELECT a.fotografia, a.nombres, a.apellidos, a.cu, a.sexo, c.carrera FROM Alumnos a INNER JOIN carreras c ON a.codigocarrera = c.codigo";
 if (isset($_GET["ordenar"])) {
@@ -23,7 +23,7 @@ while ($row = $result->fetch_assoc()) {
     <title>Document</title>
     <style>
         th {
-            background-color: lightskyblue;
+            background-color: blue;
             color: white;
         }
 
@@ -40,7 +40,7 @@ while ($row = $result->fetch_assoc()) {
         }
 
         .impar {
-            background-color: lightgrey;
+            background-color: grey;
         }
     </style>
 </head>
@@ -62,7 +62,7 @@ while ($row = $result->fetch_assoc()) {
         ?>
             <tr class="<?php echo $clase; ?>">
                 <td><?php echo $i + 1; ?></td>
-                <td><img src="../images/<?php echo $alumno["fotografia"]; ?>" alt="Fotografia" width="100"></td>
+                <td><img src="imagenes/<?php echo $alumno["fotografia"]; ?>" alt="Fotografia" width="100"></td>
                 <td><?php echo $alumno["nombres"]; ?></td>
                 <td><?php echo $alumno["apellidos"]; ?></td>
                 <td><?php echo $alumno["cu"]; ?></td>
