@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="ajax.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" >
+    
+  </head>
+  <body>
+    <div class="container" >
+      <div class="row">
+        <div class="col-1 bg-gradient">
+          
+          <nav class="nav flex-column">
+            <a class="nav-link" href="javascript:listar()">Listar</a>
+            <a class="nav-link" href="javascript:cargarContenido('form_create.php')">Registrar</a>
+          </nav>
+
+
+
+
+        </div>
+        <div class="col-11">
+          <div
+            id="contenido"
+            style="
+              width: 80%;
+              padding: 15px;
+              border: 1px solid rgb(222, 250, 245);
+            "
+          >
+            CRUD
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Modal -->
+<div class="modal fade" id="confirmarModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Confirmar Eliminación</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Esta Seguro que quiere eliminar  el elemento
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="eliminar()">Eliminar</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    <script src="js/bootstrap.bundle.min.js" ></script>
+  </body>
+</html>

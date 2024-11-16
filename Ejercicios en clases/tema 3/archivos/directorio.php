@@ -1,5 +1,12 @@
-<?php
-$directorio = "./";
+<?php 
+$directorio = "d:\\";
 $descriptor = opendir($directorio);
-
-while ($entrada=readdir)
+while ($entrada = readdir($descriptor) ) {
+if (is_dir($directorio.$entrada) ) {
+echo "[Directorio] " . $entrada . "<br>";
+} elseif ( is_file ($directorio. $entrada) ) {
+echo " [Fichero] " . $entrada . "<br>";
+}
+}
+closedir($descriptor);
+?>

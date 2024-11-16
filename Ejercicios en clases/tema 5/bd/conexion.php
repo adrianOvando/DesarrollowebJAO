@@ -1,6 +1,7 @@
-<?php
-$con = $mysqli("localhost:3307","root", "", "bd_eleciones(1)");
-    if($con->connect_error){
-        die("conexion fallida".$con->connect_error);
-    }
+<?php 
+$con= new mysqli("localhost","root","","bd_elecciones");
+if($con->connect_error)
+{
+    die("Error: " . $con->connect_error);
+}
 ?>

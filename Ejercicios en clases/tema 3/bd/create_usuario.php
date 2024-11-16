@@ -16,3 +16,5 @@ if($resultado){?>
     echo "Error al insertar los datos";
 }
 ?>
+
+

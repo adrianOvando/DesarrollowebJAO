@@ -6,10 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="color" name="color" id="color">
-    <div style="width: 100px; height: 100px;"></div>
+    <input type="color" name="color" id="color" >
+    <div style="width: 100px; height: 100px;border: 1px solid black; " id="muestra">
+
+    </div>
+    <script>
+        var color=document.getElementById("color");
+        color.onchange=function(){
+       
+            document.getElementById("muestra").style.backgroundColor=color.value;
+
+        }
+    </script>
 </body>
 </html>
-
-
-tarea para este miercoles
