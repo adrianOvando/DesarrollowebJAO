@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="aja.js">
+        function gener(){
+    document.getElementById('generar').addEventListener('click', function() {
+      const operacion = document.getElementById('tipoOperacion').value;
+      const cantidad = parseInt(document.getElementById('cantidad').value);
+      const principal = document.getElementById('principal');
+      principal.innerHTML = ''; // Limpiar ejercicios previos
+
+      for (let i = 0; i < cantidad; i++) {
+        const num1 = Math.floor(Math.random() * 10) + 1;
+        const num2 = Math.floor(Math.random() * 10) + 1;
+        const ejercicio = document.createElement('div');
+        ejercicio.classList.add('mb-3');
+
+        // Crear operación y el input para el resultado
+        ejercicio.innerHTML = `
+          ${num1} ${operacionSimbolo(operacion)} ${num2} = 
+          <input type="number" class="resultado" data-correcto="${calcularResultado(num1, num2, operacion)}">
+        `;
+        principal.appendChild(ejercicio);
+      }
+    });
+
+    document.getElementById('calificar').addEventListener('click', function() {
+      const inputs = document.querySelectorAll('.resultado');
+
+      inputs.forEach(input => {
+        const respuesta = parseFloat(input.value);
+        const correcto = parseFloat(input.getAttribute('data-correcto'));
+
+        if (respuesta === correcto) {
+          input.classList.add('correcto');
+          input.classList.remove('incorrecto');
+        } else {
+          input.classList.add('incorrecto');
+          input.classList.remove('correcto');
+        }
+      });
+    });
+
+    // Función para obtener el símbolo de la operación
+    function operacionSimbolo(operacion) {
+      switch (operacion) {
+        case 'suma': return '+';
+        case 'resta': return '-';
+        case 'multiplicacion': return '*';
+        case 'division': return '/';
+        default: return '';
+      }
+    }
+
+    // Función para calcular el resultado de la operación
+    function calcularResultado(num1, num2, operacion) {
+      switch (operacion) {
+        case 'suma': return num1 + num2;
+        case 'resta': return num1 - num2;
+        case 'multiplicacion': return num1 * num2;
+        case 'division': return parseFloat((num1 / num2).toFixed(2));
+        default: return 0;
+      }
+    }
+}
+    </script>
+</body>
+</html>

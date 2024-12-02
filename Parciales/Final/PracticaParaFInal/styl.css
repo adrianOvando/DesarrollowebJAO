@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#tablaiz {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 125px;
+    background-color: rgb(72, 125, 231);
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+}
+
+#ima {
+    width: 100px;
+}
+
+.bar .option {
+    margin: 15px 0;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#contenido {
+    margin-left: 125px; 
+}
+
+#principal {
+    height: 600px;
+    overflow: auto;
+}
+
+#pie {
+  display: flex;
+  margin-left: 125px; 
+  height: 39px;
+  background-color: navy;
+}
+.p{
+    margin-top: -10px;
+    margin-left: 250px;
+}
+
+.b{
+    margin-top: -10px;
+    margin-left: 250px;
+}
+
+#navega{ 
+    background-color: aqua;
+}
+
+.bajac {
+    padding: 15px;
+}
+
+.card {
+    margin-bottom: 20px; 
+}
