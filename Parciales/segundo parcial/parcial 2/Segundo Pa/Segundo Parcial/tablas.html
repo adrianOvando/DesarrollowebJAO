@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #tabla{
+        border: 1px solid black;
+        border-collapse: collapse;
+        height: 60px;
+    }
+    #resultado{
+        border: 1px solid orange;
+        border-collapse: collapse;
+    }
+    table{
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+</style>
+<body>
+    <div id="tabla">
+        <form action="javascript:realizarOperacion()" method="get">
+            Tabla del
+            <input type="number" name="del" id="del" style="width: 30px;">
+            <label for="suma">Suma</label>
+            <input type="radio" name="operacion" value="suma">
+            <label for="resta">Resta</label>
+            <input type="radio" name="operacion" value="resta">
+            <label for="multiplicacion">Multiplicacion</label>
+            <input type="radio" name="operacion" value="multiplicacion">
+            <label for="division">Division</label>
+            <input type="radio" name="operacion" value="division">
+            Hasta el
+            <input type="number" name="al" id="al" style="width: 30px;">
+            <input type="submit" value="Calcular">
+        </form>
+    </div>
+    <div id="resultado">
+        <table id="resultado-tabla"></table>
+    </div>
+    
+</body>
+</html>

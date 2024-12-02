@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar Colores</title>
+</head>
+<body>
+    <form>
+        <label for="seccion">Sección:</label>
+        <select id="seccion" onchange="cambiarColor()">
+            <option value="menu">Menú</option>
+            <option value="principal">Principal</option>
+            <option value="historial">Historial</option>
+            <option value="botones">Botones</option>
+        </select>
+        <label for="color">Color:</label>
+        <input type="color" id="color" onchange="cambiarColor()">
+    </form>
+    <script src="ajax.js"></script>
+</body>
+</html>
